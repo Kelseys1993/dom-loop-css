@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dom loop</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+	
+	<h1 class='another'>Hello</h1>
+	
+	<h2 class='another'>Hello World</h2>
+
+<body>
+
+	<script>
+
+	(function(){
+	// the settimeout function sets the fucntion to occur after 3 seconds
+	setTimeout(function domQueryA(){
+
+			//This is getting the class name another
+			var headings = document.getElementsByClassName('another');
+
+
+			// this is looping through the elements with class name another
+			for ( var i =0, max=headings.length; i<max; i++) {
+					//each loop it changes the colour of the element to green
+					headings[i].style.color = 'green';
+				}
+					
+			//this is how long the settimeout is for
+			 }, 3000);
+
+
+})()
+
+
+
+
+
+	</script>
+	
+</body>
+</html>
