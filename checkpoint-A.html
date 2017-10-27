@@ -15,25 +15,26 @@
 
 	<script>
 
+	//Iiffe Starts ***
 	(function(){
-	// the settimeout function sets the fucntion to occur after 3 seconds
-	setTimeout(function domQueryA(){
+			// the settimeout function sets the fucntion to occur after 3 seconds
+			setTimeout(function domQueryA(){
 
-			//This is getting the class name another
-			var headings = document.getElementsByClassName('another');
-
-
-			// this is looping through the elements with class name another
-			for ( var i =0, max=headings.length; i<max; i++) {
-					//each loop it changes the colour of the element to green
-					headings[i].style.color = 'green';
-				}
-					
-			//this is how long the settimeout is for
-			 }, 3000);
+				//This is getting the class name another
+				var headings = document.getElementsByClassName('another');
 
 
-})()
+				// this is looping through the elements with class name another
+				for ( var i =0, max=headings.length; i<max; i++) {
+						//each loop it changes the colour of the element to green
+						headings[i].style.color = 'green';
+					}
+						
+				//this is how long the settimeout is for
+				 }, 3000);
+
+
+	})()//Iiffe Ends ***
 
 
 
